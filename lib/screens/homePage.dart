@@ -35,18 +35,18 @@ class HomePage extends StatelessWidget {
                         itemBuilder: (context, index) {
                           return Padding(
                             padding: const EdgeInsets.only(bottom: 20),
-                            child: Container(
+                            child: SizedBox(
                               // color: Colors.red,
-                              // width: 150,
-                              height: 65,
+                              width: MediaQuery.of(context).size.width,
+                              height: 70,
                               child: Row(
                                 children: [
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
                                       Container(
-                                        width: 60,
-                                        height: 60,
+                                        width: 70,
+                                        height: 70,
                                         decoration: BoxDecoration(
                                           color: Colors.grey[700],
                                           borderRadius:
